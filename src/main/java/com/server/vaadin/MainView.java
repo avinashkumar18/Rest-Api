@@ -39,7 +39,7 @@ public class MainView extends VerticalLayout{
 		
 		grid.setHeight("300px");
 		grid.setColumns("id", "name", "language", "framework");
-		grid.getColumnByKey("id").setWidth("100px").setFlexGrow(0);
+		grid.getColumnByKey("id").setWidth("300px").setFlexGrow(0);
 		
 		filter.setPlaceholder("Filter by name");
 		
