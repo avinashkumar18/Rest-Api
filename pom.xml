@@ -9,8 +9,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.server</groupId>
-	<artifactId>Kaiburr-Assessment</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>kaiburr-assessment</artifactId>
+	<version>0.0.1</version>
 	<name>Kaiburr-Assessment</name>
 	<description>Kaiburr-Assessment project for Spring Boot</description>
 	<properties>
@@ -79,15 +79,7 @@
 			<plugin>
         		<groupId>com.google.cloud.tools</groupId>
         		<artifactId>jib-maven-plugin</artifactId>
-        		<version>3.2.1</version>
-        		<configuration>
-        			<container>
-        				<mainClass>com.server.KaiburrAssessmentApplication</mainClass>
-        			</container>
-          			<to>
-            			<image>registry.hub.docker.com/samplerepo/myimage</image>
-          			</to>
-        		</configuration>
+        		<version>2.7.0</version>
       		</plugin>
 		</plugins>
 	</build>
