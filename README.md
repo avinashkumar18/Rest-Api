@@ -309,8 +309,12 @@ Jib is an interesting plugin developed by Google. https://cloud.google.com/java/
         		<version>2.8.0</version>
       		</plugin>
 I was able to create docker image locally and then I pushed the image to the Docker hub
+	
+	mvn compile jib:dockerBuild
 
 ![image](https://user-images.githubusercontent.com/31410414/165156741-3f21ea28-76e4-4a6e-a07c-b18c07d908ee.png)
+![image](https://user-images.githubusercontent.com/31410414/165256790-a4b54044-a7a7-49a0-a93f-76844b100578.png)
+
 
 
 # Task 4. Web UI Forms:
@@ -343,6 +347,12 @@ Finding server by name
 I used Jenkins to build and publish docker image into the registry. I downloaded all the necessary plugins in Jenkins to configure the docker build. The configurations were setup correctly in Jenkins and the code is cloned from this github repository.
 The application building part was successful while the docker image build was a failure. Due to some unknown exceptions, my docker build failed and was not able to create image.
  ![image](https://user-images.githubusercontent.com/31410414/163729998-95c92cf6-0f5b-4b7a-9b59-923be3a0c55d.png)
+	#UPDATE
+	
+	I was able to build Docker image uploaded in the docker hub via Jenkins
+![image](https://user-images.githubusercontent.com/31410414/165256444-598c0b57-a509-4aa2-9e7b-47bccb8e8f01.png)
+![image](https://user-images.githubusercontent.com/31410414/165256487-94f34512-fecb-475b-8d45-a334a356619f.png)
+	
 
 
 # Task 6. Machine Learning Program
