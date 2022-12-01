@@ -15,15 +15,24 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 import com.server.dto.ServerDto;
+import com.server.dto.ZipsDto;
 import com.server.repo.ServerRepo;
+import com.server.repo.ZipsRepo;
 
 @RestController
 public class ServerController  {
 	
 	@Autowired
 	private ServerRepo repo;
-	
 
+	@Autowired
+	private ZipsRepo zipRepo;
+	
+	@GetMapping("/zips")
+	@ResponseBody
+	public List<ZipsDto> getAllZips() {
+			return zipRepo.findAll();
+     } 
 	
 	@GetMapping("/hello")
 	public String name() {
