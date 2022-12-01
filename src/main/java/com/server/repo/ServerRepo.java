@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 
-import com.server.dto.ServerDto;
+import com.server.dto.Server.ServerDto;
 
 public interface ServerRepo extends MongoRepository<ServerDto, String>{
 	

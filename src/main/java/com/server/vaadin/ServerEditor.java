@@ -3,7 +3,7 @@ package com.server.vaadin;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.server.controller.ServerController;
-import com.server.dto.ServerDto;
+import com.server.dto.Server.ServerDto;
 import com.server.repo.ServerRepo;
 import com.vaadin.flow.component.Key;
 import com.vaadin.flow.component.KeyNotifier;
