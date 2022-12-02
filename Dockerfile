@@ -1,7 +1,7 @@
 FROM maven:3.6.3-jdk-11-slim AS build
 COPY src /Kaiburr-Assessment/src
-COPY pom.xml /Kaiburr-Assessment/app
-RUN mvn -f /home/app/pom.xml clean package
+COPY pom.xml /Kaiburr-Assessment
+RUN mvn -f /Kaiburr-Assessment/pom.xml clean package
 
 
 
