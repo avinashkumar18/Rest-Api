@@ -2,8 +2,7 @@ package com.server.vaadin;
 
 import org.springframework.util.StringUtils;
 
-
-import com.server.dto.ServerDto;
+import com.server.dto.Server.ServerDto;
 import com.server.repo.ServerRepo;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.grid.Grid;

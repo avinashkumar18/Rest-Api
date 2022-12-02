@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.server.dto.ServerDto;
-import com.server.dto.ZipsDto;
+import com.server.dto.Server.ServerDto;
+import com.server.dto.Zips.ZipsDto;
 import com.server.repo.ServerRepo;
 import com.server.repo.ZipsRepo;
 
