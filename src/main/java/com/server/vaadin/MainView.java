@@ -1,7 +1,5 @@
 package com.server.vaadin;
 
-import org.springframework.util.StringUtils;
-
 import com.server.dto.Server.ServerDto;
 import com.server.repo.ServerRepo;
 import com.vaadin.flow.component.button.Button;
@@ -18,8 +16,6 @@ public class MainView extends VerticalLayout{
 	
 	private final ServerRepo repo;
 	
-	private final ServerEditor editor;
-	
 	final Grid<ServerDto> grid;
 	
 	final TextField filter;
@@ -28,7 +24,6 @@ public class MainView extends VerticalLayout{
 
 	public MainView(ServerRepo repo, ServerEditor editor) {
 		this.repo = repo;
-		this.editor = editor;
 		this.grid = new Grid<>(ServerDto.class);
 		this.filter = new TextField();
 		this.addNewBtn = new Button("New Server", VaadinIcon.PLUS.create());
@@ -60,7 +55,7 @@ public class MainView extends VerticalLayout{
 	}
 
 	void  listServers(String value) {
-		if (StringUtils.isEmpty(value)) {
+		if (value.isEmpty()) {
 			grid.setItems(repo.findAll());
 		}
 		else {
