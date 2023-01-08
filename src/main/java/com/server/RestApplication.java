@@ -10,12 +10,12 @@ import com.server.repo.ServerRepo;
 
 @EnableMongoRepositories
 @SpringBootApplication
-public class KaiburrAssessmentApplication implements CommandLineRunner{
+public class RestApplication implements CommandLineRunner{
 	
 	
 
 	public static void main(String[] args) {
-		SpringApplication.run(KaiburrAssessmentApplication.class, args);
+		SpringApplication.run(RestApplication.class, args);
 	}
 
 	@Override
